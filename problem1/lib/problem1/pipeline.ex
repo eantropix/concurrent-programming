@@ -26,7 +26,7 @@ defmodule Problem1.Pipeline do
       send(first_worker_pid, {:col_b, col})
     end)
 
-    # recebe linhas de c em ordem reversa
+    # recebe linhas de c 
     c_rows =
       Enum.reduce((matrix_size - 1)..0//-1, %{}, fn i, acc ->
         receive do
