@@ -1,6 +1,3 @@
-# Algoritmo 9.3.1: A Distributed Matrix Multiplication Pipeline
-
-O código a seguir apresenta a solução em *pipeline* fechado (*closed pipeline*) para a multiplicação de matrizes distribuída. O coordenador despacha as linhas e colunas, enquanto os trabalhadores calculam os produtos internos.
 
 ```text
 chan vector[n](double v[n]);     # messages to workers
